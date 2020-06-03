@@ -21,7 +21,6 @@ function handleIndex(request, response) {
     color: "#E80978",
 	  head: "evil",
     tail: "hook",
-    shout: "LOUD NOISES"
   }
   response.status(200).json(battlesnakeInfo)
 }
@@ -41,7 +40,8 @@ function handleMove(request, response) {
 
   console.log('MOVE: ' + move)
   response.status(200).send({
-    move: move
+    move: move,
+    shout: "LOUD NOISES"
   })
 }
 
