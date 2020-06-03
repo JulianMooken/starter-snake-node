@@ -19,8 +19,9 @@ function handleIndex(request, response) {
     apiversion: '1',
     author: '',
     color: "#E80978",
-	  head: "fang",
-	  tail: "hook"
+	  head: "evil",
+    tail: "hook",
+    shout: "LOUD NOISES"
   }
   response.status(200).json(battlesnakeInfo)
 }
